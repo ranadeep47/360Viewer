@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>3D Home View</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		<div id="container">
+			<div class="controls-container">
+				<div id="controls">
+					<button class="control" id="control-up" data-movement="up">&#9650;</button>
+					<button class="control" id="control-down" data-movement="down">&#9660;</button>
+					<button class="control" id="control-left" data-movement="left">&#9664;</button>
+					<button class="control" id="control-right" data-movement="right">&#9654;</button>
+				</div>
+				<div id="zoom-controls-container">
+					<button id="zoom-minus">-</button>
+					<div id="zoom-range">
+						<span class="zoom-range-value" data-zoom="95">|</span>
+						<span class="zoom-range-value" data-zoom="85">|</span>
+						<span class="zoom-range-value default" data-zoom="75">|</span>
+						<span class="zoom-range-value" data-zoom="60">|</span>
+						<span class="zoom-range-value" data-zoom="40">|</span>
+					</div>
+					<button id="zoom-plus">+</button>
+				</div>
+				<div id="reset-button-container">
+					<button id="reset-button">Reset zoom</button>
+				</div>
+				<div id="auto-rotate-container">
+					<label>
+						Auto Rotate <input id="auto-rotate" type="checkbox" value="true" checked="true">
+					</label>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/three.js"></script>
+		<script type="text/javascript" src="js/OrbitControls.js"></script>
+		<script type="text/javascript" src="js/Detector.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>

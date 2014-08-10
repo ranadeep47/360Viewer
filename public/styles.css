@@ -1,0 +1,159 @@
+body,html{
+	padding : 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'helvetica',arial;
+}
+
+#container{
+	position: relative;
+}
+
+#controls {
+	position: absolute;
+	top : 40px;
+	left : 40px;
+	border : 1px solid #ddd;
+}
+.control{
+	color: #666;
+	font-size: 16px;
+	height: 20px;
+	width: 20px;
+	border : 0;
+	outline: none;
+	border-radius: 50%;
+	margin: 5px;
+	background-color: #fff;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+	cursor: pointer;
+	position: absolute;
+	padding: 0;
+}
+.control:active{
+	background-color: #efefef;
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
+}
+#control-up{
+	font-size: 10px;
+	padding-bottom: 2px;
+	top : 10px;
+	left :50px;
+}
+#control-down{
+	font-size: 10px;
+	top : 50px;
+	left: 50px;
+}
+#control-left{
+	padding: 0 2px 1px 0;
+	font-size: 8px;
+	top: 30px;
+	left: 30px;
+}
+#control-right{
+	padding: 0 0 1px 1px;
+	font-size: 8px;
+	top : 30px;
+	left: 70px;
+}
+
+#zoom-controls-container{
+	position: absolute;
+	top : 122px;
+	left : 50px;
+
+}
+
+#zoom-range{
+	display: inline-block;
+}
+
+.zoom-range-value{
+	width: 10px;
+	height: 10px;
+	opacity: 0.3;
+	color : #333;
+	padding: 2px;
+}
+
+.zoom-range-value.default{
+	opacity: 1;
+	color : #fff;
+	text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+}
+
+
+#zoom-plus,#zoom-minus {
+	cursor: pointer;
+	background-color: #fff;
+	box-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+	border : 0;
+	outline: none;
+	padding: 2px 8px;
+}
+
+#zoom-plus:active,#zoom-minus:active{
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
+} 
+
+#zoom-plus {
+
+}
+
+#zoom-minus {
+	font-size: 14px;
+	padding: 2px 10px;
+}
+
+
+
+#reset-button-container{
+	position: absolute;
+	top : 152px;
+	left : 70px;
+}
+
+#reset-button{
+	border : 0;
+	outline: none;
+	background: #fff;
+	box-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+	font-size : 8px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	padding: 5px;
+}
+
+#reset-button:active{
+	background-color: #f2f2f2;
+	color : #333;
+}
+
+#reset-button:hover{
+	background-color : #333;
+	color : #fff;
+}
+
+#auto-rotate-container{
+	position: absolute;
+	bottom: 30px;
+	right : 30px;
+}
+
+#auto-rotate-container > label {
+	font-size: 8px;
+	padding: 5px;
+	background-color: #fff;
+	text-transform: uppercase;
+	color : #333;
+	box-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+}
+
+#auto-rotate{
+	margin : 0;
+	position: relative;
+	top : 3px;
+}
