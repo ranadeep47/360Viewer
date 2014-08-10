@@ -7,6 +7,6 @@ module.exports = {
 }
 
 if(module.exports.environment === 'production') {
-	module.exports.host  = OPENSHIFT_NODEJS_IP;
-	module.exports.port  =  OPENSHIFT_NODEJS_PORT;
+	module.exports.host  = process.env.OPENSHIFT_NODEJS_IP;
+	module.exports.port  =  process.env.OPENSHIFT_NODEJS_PORT;
 }
