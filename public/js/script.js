@@ -34,7 +34,7 @@ var scene 		= new THREE.Scene(),
 var geometry    = new THREE.SphereGeometry(Sphere.RADIUS,Sphere.HSEGMENTS,Sphere.VSEGMENTS),
 	material 	= new THREE.MeshBasicMaterial(
 						{
-							map : THREE.ImageUtils.loadTexture('image0.jpg'),
+							map : THREE.ImageUtils.loadTexture('img.jpg'),
 							overdraw : true // To the make the division lines of geometry disappear 
 						}
 				 	),
